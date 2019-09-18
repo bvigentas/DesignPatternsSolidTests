@@ -1,0 +1,22 @@
+Tell, Dont Ask.
+
+Uma implementacao fazendo algo como um camculo de impostos, deveria em uma nota fiscal deveria falar o valor. 
+Ou seja sua imoplementacao deveria estar na nota fiscal.
+E nao pedir e calcular o imposto em outra classe.
+
+
+O que o método faz? Devia dizer no nome dele;
+Como ele faz? Nós não deveriamos saber isso. Isso deveria estar encapsulado nele.
+
+
+Devemos evitar chamadas em cascata pois com isso furamos o encapsulamento.
+No examplo abaixo, digamos que a classe cliente muda e ela não conta mais com o metodo marcarComoInadimplente(), nesse caso a aplicação irá quebrar em diversos pontos. 
+
+fatura.getCliente.marcarComoInadimplente();
+
+O correto neste casso seria ter algo como:
+
+fatura.marcarClienteComoInadimplente();
+
+e entçao fariamos o encapsulamento na classe fatura.
+E nesse caso, caso o cliente mudase, deveriamos alterar apenas na classe fatura.

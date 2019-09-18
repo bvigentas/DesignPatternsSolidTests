@@ -1,0 +1,7 @@
+Uma classe deve ser coesa, isto é deve servir a apenas um propósito.
+Neste pensamento não devemos ficar acessando uma classe muitas vezes e ficar a alterando, assim como não devemos
+ter de ficar dando ctrl + f para procurar alguma informação em uma classe.
+
+Se isso está acontecendo, essa classe não é coesa.
+
+Utilize interfaces e padrõews de projetos para deixar a classe o mais coesa possível.

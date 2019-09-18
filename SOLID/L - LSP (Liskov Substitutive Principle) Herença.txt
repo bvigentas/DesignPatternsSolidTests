@@ -1,0 +1,18 @@
+Diz que as restrições de uma classe herdada devem ser as mesmas.
+Pré condições não podem ser mais restritas.
+
+Por exemplo, em uma classe Quadrado que extende Retangulo, eu teria uma pré condição
+de que os lados devem ser iguais. Isso não deveria ocorrer segundo LSP.
+A pré condição pode apenas afrouxar as condições.
+
+Pós condição, classe filho nunca pode afrouxar a condição do pai.
+Pai retorna 1 a 100.
+Filho retorna 1 a 200.
+
+O cliente está esperando um retorno de 1 a 100, mas recebe 1 a 200.
+Então a aplicação quebra.
+
+
+Como o uso da herança corretamente é muito dificil, devemos tentar usar a COMPOSIÇÃO.
+
+Criar uma classe com os metodos em comum das duas classes e ter um atributo deste tipo nas classes.

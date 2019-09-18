@@ -1,0 +1,22 @@
+Classe estável, quando várias classes dependem dela.
+Queremos nos aclopar com classes estáveis, pois sabemos que elas raramente serão alteradas.
+
+
+Uma solução para se criar classes estáveis é criar uma INTERFACE.
+
+Por exemplo, se 3 classes se acoplam a uma classe.
+Criamos uma interface que será implementada por essas 3 classes
+então a classe só precisará se aclopar com a interface.
+
+
+
+
+O princiio diz que sua classe deve ser ABERTA para extensão e FECHADA para edição.
+Voc~E nao deve ter que ficar indo na classe e alterando ela, mas ela deve ser facilmente usada por outras classes. Mudando a execução dela ao longo do tempo
+
+
+DIP - Dependence Inversible Principle
+
+A depende de B, então B tem de ser mais estavel que A
+B depende de C, então C tem de ser mais estavel que B.
+Tende depender de abstrações(interfaces) e não classes.
